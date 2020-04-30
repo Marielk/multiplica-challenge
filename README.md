@@ -25,7 +25,7 @@ La app podrá ser probada en el puerto 4200 (http://localhost:4200/)
 
 _Importante: Debe tener instalado Angular de forma global para ejecutar el servidor_
 
-Si lo desea puede entrar directamente al demo de la mini app aquí 👉 [Color-tool](https://matzii.com/code-challenges/mariel) 
+Si lo desea puede entrar directamente al demo de la mini app aquí 👉 [Color-tool](https://color-tool-deploy.herokuapp.com/) 
 
 ## Puedes también ejecutar test unitarios
 
