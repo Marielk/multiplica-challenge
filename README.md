@@ -36,6 +36,3 @@ Ejecuta en tu consola `ng test` para correr los test unitarios vía [Karma](http
 * **Mariel Quezada** - *Developer* - [Marielk](https://github.com/Marielk)
 :woman: :computer:. 
 
-
-
-
