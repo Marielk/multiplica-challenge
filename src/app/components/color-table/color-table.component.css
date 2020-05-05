@@ -1,0 +1,16 @@
+.color-block{
+  border: 1px solid black;
+  border-radius: 12px;
+  height: 240px;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.name-block{
+  flex-wrap: wrap;
+  width: 36%;
+  margin: auto;
+  height: 70%;
+  align-content: center;
+}

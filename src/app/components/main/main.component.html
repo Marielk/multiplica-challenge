@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row header">
+    <h1>Colores</h1>
+  </div>
+  <!-- interface de colores -->
+  <div class="row">
+    <div class="col-12 color-table-container">
+      <div *ngIf="showColors">
+        <app-color-table [color]="colorsToShow"></app-color-table>
+      </div>
+      <div *ngIf="showCopied">
+        <app-copied></app-copied>
+      </div>
+    </div>
+  </div>
+  <!--  paginacion -->
+  <div class="row">
+    <div class="col-12 pagination-container">
+      <nav aria-label="...">
+        <ul class="pagination d-flex justify-content-between mb-0">
+          <li  class="page-item">
+            <a id="backBtn" class="page-link" role="button" (click)="pasePage(1)" >< Anterior</a>
+          </li>
+          <li  class="page-item">
+            <a id="nextBtn" class="page-link" role="button" (click)="pasePage(2)">Siguiente ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>  
+  </div>
+</div>

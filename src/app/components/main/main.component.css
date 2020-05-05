@@ -1,0 +1,18 @@
+.header{
+  border: 1px solid black;
+  border-radius: 12px;
+  justify-content: center;
+}
+
+.color-table-container{
+  height: 520px;
+}
+
+.pagination-container{
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+.page-link{
+  border: none;
+}
