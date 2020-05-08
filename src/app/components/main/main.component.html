@@ -6,10 +6,14 @@
   <div class="row">
     <div class="col-12 color-table-container">
       <div *ngIf="showColors">
-        <app-color-table [color]="colorsToShow"></app-color-table>
+        <app-color-table 
+        [color]="colorsToShow"
+        (hasCopied) = "onCopied($event)"
+        (pickedColor) = "onColorToCopy($event)"
+        ></app-color-table>
       </div>
-      <div *ngIf="showCopied">
-        <app-copied></app-copied>
+      <div *ngIf="showCopied" class="copy-container" [style.backgroundColor]="colorToCopy">
+        <app-copied [colorCopied] = "colorToCopy"></app-copied>
       </div>
     </div>
   </div>

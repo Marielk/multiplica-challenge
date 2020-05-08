@@ -12,6 +12,7 @@ export class MainComponent implements OnInit, AfterViewChecked {
   showCopied: boolean;
   colorsToShow: Colour[];
   page = 1;
+  colorToCopy: string;
   constructor(private colorService: DataColorService) { }
 
   ngOnInit(): void {
@@ -21,6 +22,24 @@ export class MainComponent implements OnInit, AfterViewChecked {
   ngAfterViewChecked() {
 
   }
+
+  onCopied(show: boolean) {
+    if (show) {
+      this.showCopied = show;
+      this.showColors = !show;
+      // despues de unos segundos desaparece la interfaz de copiado
+      setTimeout(() => {
+        this.showCopied = false;
+        this.showColors = true;
+        // debugger
+      }, 2000);
+    }
+  }
+
+  onColorToCopy(colorCode: string){
+    this.colorToCopy = colorCode;
+  }
+
 
   pasePage(page: number) {
     this.page = page;

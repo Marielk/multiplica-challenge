@@ -1,15 +1,16 @@
 <div class="row">
   <div *ngFor="let color of localeColor" class="col-4 p-0">
-    <div class="color-block">
+    <div class="color-block" [style.backgroundColor]="color.color" (click)="copyColor(color.color)" data-toggle="tooltip" data-placement="top" title="Haz click para copiar!">
       <div class="d-flex justify-content-start">
-        <p>{{color.year}}</p>
+        <p class="pl-2 pt-2">{{color.year}}</p>
       </div>
       <div class="d-flex justify-content-center name-block">
         <p class="">{{color.name}}</p>
+        <input class="input-color" id="{{color.id}}" value="{{color.color}}" type="text" tabindex='-1' aria-hidden='true'/>
         <p class="">{{color.color}}</p>
       </div>
       <div class="d-flex justify-content-end align-items-end">
-        <p>{{color.pantone_value}}</p>
+        <p class="pr-2">{{color.pantone_value}}</p>
       </div>
     </div>
   </div>

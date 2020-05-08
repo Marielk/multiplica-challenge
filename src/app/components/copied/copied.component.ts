@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-copied',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./copied.component.css']
 })
 export class CopiedComponent implements OnInit {
-
+  @Input () colorCopied: string;
   constructor() { }
 
   ngOnInit(): void {

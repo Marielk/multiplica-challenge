@@ -13,4 +13,11 @@
   margin: auto;
   height: 70%;
   align-content: center;
+  pointer-events: visible;
+  cursor: pointer;
+}
+
+.input-color{
+  position: absolute;
+  left: -9999px;
 }

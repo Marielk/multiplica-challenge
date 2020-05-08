@@ -16,3 +16,7 @@
 .page-link{
   border: none;
 }
+
+.copy-container{
+  border-radius: 12px;
+}

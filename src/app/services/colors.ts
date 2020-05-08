@@ -1,4 +1,5 @@
 export interface Colour{
+  id: number;
   name: string;
   year: number;
   color: string;
