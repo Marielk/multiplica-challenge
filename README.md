@@ -27,9 +27,6 @@ _Importante: Debe tener instalado Angular de forma global para ejecutar el servi
 
 Si lo desea puede entrar directamente al demo de la mini app aquí 👉 [Color-tool](https://color-tool-deploy.herokuapp.com/) 
 
-## Puedes también ejecutar test unitarios
-
-Ejecuta en tu consola `ng test` para correr los test unitarios vía [Karma](https://karma-runner.github.io).
 
 ## Codeado por ✒️
 
